@@ -7,7 +7,7 @@
 
 body {
   height: 100vh;
-  background-color: #e5e5e5;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,14 +16,14 @@ body {
 #parent {
   width: 700px;
   height: 550px;
-  border: 14px solid #990033;
-  background-color: #151a51;
+  border: 14px solid darkred;
+  background-color: darkblue;
 }
 
 #child {
   height: 100px;
   width: 100px;
-  background-color: #ffcc1e;
+  background-color: yellow;
 }
 
 /* Fast and Easy center DIV with CSS */
@@ -39,15 +39,15 @@ body {
 
 /* Flexbox method */
 
-#parent {
+/* #parent {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 /* Grid method */
 
-#parent {
+/* #parent {
   display: grid;
   place-items: center;
-}
+} */

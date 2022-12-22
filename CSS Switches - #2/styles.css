@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: #1a1a1a;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+body > div {
+    flex: 0 0 120px;
+    text-align: center;
+}
+
+.switch {
+    display: inline-block;
+}
+
+.switch input {
+    display: none;
+}
+
+.switch label {
+    display: block;
+    width: 60px;
+    height: 30px;
+    padding: 3px;
+    border: 2px solid white;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.switch label::after {
+    content: "";
+    display: inherit;
+    width: 20px;
+    height: 20px;
+    background-color: darkred;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.switch.square label,
+.switch.square label::after {
+    border-radius: 0;
+}
+
+.switch input:disabled ~ label {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+.switch input:checked ~ label::after {
+    background-color: green;
+    translate: 30px 0;
+}
+
+.switch input:checked ~ label {
+    border-color: green;
+}

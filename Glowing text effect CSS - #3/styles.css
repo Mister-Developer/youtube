@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cascadia Mono';
+    background-color: #1a1a1a;
+}
+
+p {
+    color: #222;
+    font-size: 6em;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: default;
+    letter-spacing: 5px;
+}
+
+p:hover {
+    color: white;
+    text-shadow: 0 0 10px white, 0 0 40px white;
+}
